@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/number_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="0"
+        android:textSize="100sp"
+        android:textColor="@color/bule"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="초기화"
+            android:layout_marginVertical="16dp"
+            android:layout_marginStart="16dp"/>
+        <Button
+            android:id="@+id/plus_btn"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
