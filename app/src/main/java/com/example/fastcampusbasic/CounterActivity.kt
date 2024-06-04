@@ -1,17 +1,15 @@
-package com.example.chapter2
+package com.example.fastcampusbasic
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.util.Log
-import com.example.chapter2.databinding.ActivityMainBinding
+import com.example.fastcampusbasic.databinding.ActivityCounterBinding
 
-class MainActivity : AppCompatActivity() {
+class CounterActivity : AppCompatActivity() {
     private var number = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = ActivityCounterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         number = savedInstanceState?.getInt("number") ?: 0

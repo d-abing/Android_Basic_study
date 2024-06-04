@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "chapter2"
+rootProject.name = "fastcampusbasic"
 include(":app")
  

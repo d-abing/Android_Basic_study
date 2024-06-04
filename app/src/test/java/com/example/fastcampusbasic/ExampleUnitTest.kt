@@ -1,4 +1,4 @@
-package com.example.chapter2
+package com.example.fastcampusbasic
 
 import org.junit.Test
 
