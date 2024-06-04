@@ -13,4 +13,15 @@
         <item name="android:textSize">20sp</item>
         <item name="android:gravity">end</item>
     </style>
+
+    <style name="numberKeypad">
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="backgroundTint">@color/teal</item>
+    </style>
+
+    <style name="operatorKeypad" parent="numberKeypad">
+        <item name="backgroundTint">@color/dark_teal</item>
+    </style>
 </resources>

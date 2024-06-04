@@ -2,7 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="bule">#2196F3</color>
+    <color name="blue">#2196F3</color>
     <color name="purple">#845DA6</color>
     <color name="orange">#FF9800</color>
+    <color name="teal">#03DAC3</color>
+    <color name="dark_teal">#008684</color>
+    <color name="default_text_color">#FF000000</color>
 </resources>
