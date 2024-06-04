@@ -13,7 +13,10 @@
         android:theme="@style/Theme.FastCampusBasic"
         tools:targetApi="31">
         <activity
-            android:name=".ConverterActivity"
+            android:name=".MedicalEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MedicalViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +25,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ConverterActivity"
+            android:exported="true" />
+        <activity
             android:name=".CounterActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
