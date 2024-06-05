@@ -13,14 +13,18 @@
         android:theme="@style/Theme.FastCampusBasic"
         tools:targetApi="31">
         <activity
-            android:name=".CalculatorActivity"
+            android:name=".StopwatchActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".MedicalEditActivity"
             android:exported="true" />

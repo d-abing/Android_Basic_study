@@ -8,4 +8,7 @@
     <color name="teal">#03DAC3</color>
     <color name="dark_teal">#008684</color>
     <color name="default_text_color">#FF000000</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#4CAF50</color>
 </resources>
