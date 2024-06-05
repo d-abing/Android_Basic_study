@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculatorActivity">
+    tools:context=".Part1.chapter5.CalculatorActivity">
 
     <TextView
         android:id="@+id/equation_tv"

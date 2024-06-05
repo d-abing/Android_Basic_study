@@ -1,7 +1,7 @@
-package com.example.fastcampusbasic
+package com.example.fastcampusbasic.Part1.chapter2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.fastcampusbasic.databinding.ActivityCounterBinding
 
 class CounterActivity : AppCompatActivity() {
@@ -16,7 +16,7 @@ class CounterActivity : AppCompatActivity() {
 
         binding.numberTv.text = number.toString()
 
-        binding.resetBtn.setOnClickListener{
+        binding.resetBtn.setOnClickListener {
             number = 0
             binding.numberTv.text = number.toString()
         }

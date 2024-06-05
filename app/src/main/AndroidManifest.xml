@@ -13,9 +13,11 @@
         android:theme="@style/Theme.FastCampusBasic"
         tools:targetApi="31">
         <activity
-            android:name=".StopwatchActivity"
+            android:name=".Part1.chapter7.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Part1.chapter7.WordActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,19 +25,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CalculatorActivity"
+            android:name=".Part1.chapter6.StopwatchActivity"
             android:exported="true"></activity>
         <activity
-            android:name=".MedicalEditActivity"
+            android:name=".Part1.chapter5.CalculatorActivity"
             android:exported="true" />
         <activity
-            android:name=".MedicalViewActivity"
+            android:name=".Part1.chapter4.MedicalEditActivity"
             android:exported="true" />
         <activity
-            android:name=".ConverterActivity"
+            android:name=".Part1.chapter4.MedicalViewActivity"
             android:exported="true" />
         <activity
-            android:name=".CounterActivity"
+            android:name=".Part1.chapter3.ConverterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Part1.chapter2.CounterActivity"
             android:exported="true" />
     </application>
 

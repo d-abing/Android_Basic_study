@@ -1,4 +1,4 @@
-package com.example.fastcampusbasic
+package com.example.fastcampusbasic.Part1.chapter4
 
 import android.app.DatePickerDialog
 import android.app.DatePickerDialog.OnDateSetListener
@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import com.example.fastcampusbasic.R
 import com.example.fastcampusbasic.databinding.ActivityMedicalEditBinding
 import java.time.LocalDate
 

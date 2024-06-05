@@ -1,4 +1,4 @@
-package com.example.fastcampusbasic
+package com.example.fastcampusbasic.Part1.chapter5
 
 import android.os.Bundle
 import android.view.View

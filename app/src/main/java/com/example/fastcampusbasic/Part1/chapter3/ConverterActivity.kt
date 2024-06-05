@@ -1,13 +1,11 @@
-package com.example.fastcampusbasic
+package com.example.fastcampusbasic.Part1.chapter3
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import com.example.fastcampusbasic.databinding.ActivityConverterBinding
 import java.math.BigDecimal
 import java.math.RoundingMode
-import kotlin.text.Typography.times
 
 class ConverterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityConverterBinding
@@ -23,7 +21,7 @@ class ConverterActivity : AppCompatActivity() {
 
         var inputNumber = 0
         binding.inputEt.addTextChangedListener { text ->
-            inputNumber = if(text.isNullOrEmpty()) {
+            inputNumber = if (text.isNullOrEmpty()) {
                 0
             } else {
                 text.toString().toInt()
@@ -44,12 +42,12 @@ class ConverterActivity : AppCompatActivity() {
     }
 
     private fun setUnit() {
-        binding.inputUnitTv.text = if(cmToM) "cm" else "m"
-        binding.outputUnitTv.text = if(cmToM) "m" else "cm"
+        binding.inputUnitTv.text = if (cmToM) "cm" else "m"
+        binding.outputUnitTv.text = if (cmToM) "m" else "cm"
     }
 
     private fun setOutput(inputNumber: Int) {
-        if(cmToM) {
+        if (cmToM) {
             binding.outputTv.text = cmToMConvert(inputNumber)
         } else {
             binding.outputTv.text = mToCmConvert(inputNumber)
@@ -59,7 +57,7 @@ class ConverterActivity : AppCompatActivity() {
     private fun cmToMConvert(cm: Int): String {
         val number = BigDecimal(cm)
         val times = BigDecimal("0.01")
-        return number.multiply(times).setScale(2,RoundingMode.HALF_UP).toString()
+        return number.multiply(times).setScale(2, RoundingMode.HALF_UP).toString()
     }
 
     private fun mToCmConvert(m: Int): String {

@@ -1,4 +1,4 @@
-package com.example.fastcampusbasic
+package com.example.fastcampusbasic.Part1.chapter6
 
 import android.media.AudioManager
 import android.media.ToneGenerator

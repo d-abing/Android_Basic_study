@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MedicalEditActivity">
+    tools:context=".Part1.chapter4.MedicalEditActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

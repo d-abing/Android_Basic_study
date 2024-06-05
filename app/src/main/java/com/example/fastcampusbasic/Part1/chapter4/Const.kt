@@ -1,4 +1,4 @@
-package com.example.fastcampusbasic
+package com.example.fastcampusbasic.Part1.chapter4
 
 const val USER_INFORMATION = "userInformation"
 const val NAME = "name"
