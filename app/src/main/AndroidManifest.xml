@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,10 +15,10 @@
         android:theme="@style/Theme.FastCampusBasic"
         tools:targetApi="31">
         <activity
-            android:name=".Part1.chapter7.AddActivity"
+            android:name=".Part1.chapter8.FrameActivity"
             android:exported="false" />
         <activity
-            android:name=".Part1.chapter7.WordActivity"
+            android:name=".Part1.chapter8.GalleryActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,8 +27,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Part1.chapter7.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Part1.chapter7.WordActivity"
+            android:exported="true" />
+        <activity
             android:name=".Part1.chapter6.StopwatchActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Part1.chapter5.CalculatorActivity"
             android:exported="true" />
