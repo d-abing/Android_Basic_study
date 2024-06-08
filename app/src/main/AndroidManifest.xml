@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +16,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FastCampusBasic"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Part2.chapter1.WebtoonActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <receiver
             android:name=".Part1.chapter9.LowBatteryReceiver"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="false" />
 
         <service
             android:name=".Part1.chapter9.MediaPlayerService"
@@ -27,13 +40,7 @@
 
         <activity
             android:name=".Part1.chapter9.MusicActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Part1.chapter8.FrameActivity"
             android:exported="false" />
