@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Part2.chapter2.RecordActivity">
+
+    <TextView
+        android:id="@+id/timer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:0"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/waveform_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.fastcampusbasic.Part2.chapter2.WaveformView
+        android:id="@+id/waveform_view"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="#EAEAEA"
+        app:layout_constraintBottom_toTopOf="@+id/record_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/baseline_play_arrow_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/record_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/record_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/baseline_fiber_manual_record_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/red" />
+
+    <ImageView
+        android:id="@+id/stop_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/baseline_stop_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/record_btn"
+        app:tint="@color/black" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/play_g"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="play_btn,stop_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
