@@ -16,10 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FastCampusBasic"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Part2.chapter2.RecordActivity"
+            android:name=".Part2.chapter3.NotificationActivity"
             android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,16 +29,22 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Part2.chapter2.RecordActivity"
+            android:exported="true" />
+        <activity
             android:name=".Part2.chapter1.WebtoonActivity"
-            android:exported="true"/>
+            android:exported="true" />
+
         <receiver
             android:name=".Part1.chapter9.LowBatteryReceiver"
             android:enabled="true"
             android:exported="false" />
+
         <service
             android:name=".Part1.chapter9.MediaPlayerService"
             android:enabled="true"
             android:exported="false" />
+
         <activity
             android:name=".Part1.chapter9.MusicActivity"
             android:exported="true" />
