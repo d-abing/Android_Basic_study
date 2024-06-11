@@ -40,7 +40,7 @@ class RepoAdapter(private val onClick: (Repo) -> Unit): ListAdapter<Repo, RepoAd
     companion object {
         val diffUtil = object : DiffUtil.ItemCallback<Repo>() {
             override fun areItemsTheSame(oldItem: Repo, newItem: Repo): Boolean {
-                return oldItem === newItem
+                return oldItem.id == newItem.id
             }
 
             override fun areContentsTheSame(oldItem: Repo, newItem: Repo): Boolean {

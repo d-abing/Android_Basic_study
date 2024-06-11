@@ -37,7 +37,7 @@ class UserAdapter(val onClick: (User) -> Unit): ListAdapter<User, UserAdapter.Us
     companion object {
         val diffUtil = object : DiffUtil.ItemCallback<User>() {
             override fun areItemsTheSame(oldItem: User, newItem: User): Boolean {
-                return oldItem === newItem
+                return oldItem.id == newItem.id
             }
 
             override fun areContentsTheSame(oldItem: User, newItem: User): Boolean {

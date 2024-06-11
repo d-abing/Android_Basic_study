@@ -60,4 +60,17 @@ dependencies {
 
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation("com.tickaroo.tikxml:core:0.8.13")
+    implementation("com.tickaroo.tikxml:annotation:0.8.13")
+    implementation("com.tickaroo.tikxml:retrofit-converter:0.8.13")
+    kapt("com.tickaroo.tikxml:processor:0.8.13")
+
+    implementation("org.jsoup:jsoup:1.15.3")
+
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+
+    implementation("com.airbnb.android:lottie:6.1.0")
+
+
 }

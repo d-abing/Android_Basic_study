@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
-    android:background="?android:attr/selectableItemBackgroundsq"
+    android:background="?android:attr/selectableItemBackground"
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
