@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/profile_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_supervised_user_circle_24"
+        app:layout_constraintBottom_toBottomOf="@+id/description_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nickname_tv" />
+    
+    <TextView
+        android:id="@+id/nickname_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="유저이름"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profile_iv"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="상태메세지"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/nickname_tv"
+        app:layout_constraintStart_toEndOf="@id/profile_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

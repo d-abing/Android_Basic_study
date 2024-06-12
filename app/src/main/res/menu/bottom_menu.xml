@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/userList"
+        android:title="유저리스트"
+        android:icon="@drawable/baseline_supervised_user_circle_24" />
+
+    <item
+        android:id="@+id/chatroomList"
+        android:title="채팅리스트"
+        android:icon="@drawable/baseline_chat_bubble_outline_24" />
+
+    <item
+        android:id="@+id/myPage"
+        android:title="마이페이지"
+        android:icon="@drawable/baseline_perm_identity_24" />
+</menu>

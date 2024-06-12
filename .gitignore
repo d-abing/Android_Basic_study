@@ -13,4 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
-/app/src/main/res/raw/music.mp3
+
+music.mp3
+google-services.json
