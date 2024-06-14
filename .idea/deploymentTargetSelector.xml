@@ -3,11 +3,11 @@
   <component name="deploymentTargetSelector">
     <selectionStates>
       <SelectionState runConfigName="app">
-        <option name="selectionMode" value="DIALOG" />
-        <DropdownSelection timestamp="2024-06-12T11:15:43.950844700Z">
+        <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2024-06-14T14:55:16.418110200Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\ynlio\.android\avd\Pixel_3a_API_31.avd" />
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=R39M30B6AAL" />
             </handle>
           </Target>
         </DropdownSelection>
@@ -15,12 +15,12 @@
           <targets>
             <Target type="DEFAULT_BOOT">
               <handle>
-                <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\ynlio\.android\avd\Pixel_3a_API_31.avd" />
+                <DeviceId pluginId="PhysicalDevice" identifier="serial=R39M30B6AAL" />
               </handle>
             </Target>
             <Target type="DEFAULT_BOOT">
               <handle>
-                <DeviceId pluginId="PhysicalDevice" identifier="serial=R39M30B6AAL" />
+                <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\ynlio\.android\avd\Pixel_3a_API_31.avd" />
               </handle>
             </Target>
           </targets>
