@@ -58,7 +58,7 @@ class GithubRepActivity : AppCompatActivity() {
         val githubService = retrofit.create(GithubService::class.java)
         githubService.searchUsers(searchFor).enqueue(object: Callback<UserDto> {
             override fun onResponse(call: Call<UserDto>, response: Response<UserDto>) {
-                Log.e("MainActivity", "Search User : ${response.body().toString()}")
+                Log.e("GithubRepoActivity", "Search User : ${response.body().toString()}")
 
                 userAdapter.submitList(response.body()?.items)
             }

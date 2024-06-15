@@ -14,7 +14,7 @@ class WebtoonWebViewClient(
 
     override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
 
-        if(request != null && request.url.toString().contains("comic.네이버.com/webtoon/detail")){
+        if(request != null && request.url.toString().contains("comic.네이버.com/webtoon/detail")){ //todo
             saveData(request.url.toString())
         }
 

@@ -14,5 +14,8 @@
 .cxx
 local.properties
 
-music.mp3
-google-services.json
+app/src/main/java/com/example/fastcampusbasic/Part2/chapter4/Constants.kt
+app/src/main/java/com/example/fastcampusbasic/Part2/chapter7/Constants.kt
+app/src/main/res/raw/music.mp3
+app/google-services.json
+app/src/main/res/values/api_key.xml

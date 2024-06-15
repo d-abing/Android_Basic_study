@@ -111,13 +111,13 @@ class NewsActivity : AppCompatActivity() {
         enqueue(object : Callback<NewsRss> {
             override fun onResponse(call: Call<NewsRss>, response: Response<NewsRss>) {
                 val news = response.body()
-                Log.d("MainActivity", "News: ${news?.channel?.items}")
+                Log.d("NewsActivity", "News: ${news?.channel?.items}")
 
                 val list = response.body()?.channel?.items.orEmpty().transform()
                 newsAdapter.submitList(list)
 
                 binding.notFoundV.isVisible = list.isEmpty()
-                Log.d("MainActivity", "list: $list")
+                Log.d("NewsActivity", "list: $list")
 
                 list.forEachIndexed { index, news ->
                     Thread {
@@ -128,7 +128,7 @@ class NewsActivity : AppCompatActivity() {
                                 node.attr("property") == "og:image"
                             }
                             news.imageUrl = ogImageNode?.attr("content")
-                            Log.e("MainActivity", "imageUrl: ${news.imageUrl}")
+                            Log.e("NewsActivity", "imageUrl: ${news.imageUrl}")
                         } catch (e: Exception) {
                             e.printStackTrace()
                         }

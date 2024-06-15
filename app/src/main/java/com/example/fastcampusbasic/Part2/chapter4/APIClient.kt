@@ -12,7 +12,7 @@ object APIClient {
         .addInterceptor {
             val request = it.request()
                 .newBuilder()
-                .addHeader("Authorization", "Bearer <YOUR_TOKEN>")
+                .addHeader("Authorization", "Bearer $GITHUB_TOKEN")
                 .build()
             it.proceed(request)
         }

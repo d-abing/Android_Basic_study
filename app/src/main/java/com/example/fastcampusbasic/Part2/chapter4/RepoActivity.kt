@@ -65,7 +65,7 @@ class RepoActivity : AppCompatActivity() {
         githubService.listRepos(username, page).enqueue(object: Callback<List<Repo>> {
 
             override fun onResponse(call: Call<List<Repo>>, response: Response<List<Repo>>) {
-                Log.e("MainActivity", "page: $page, List Repo : ${response.body().toString()}")
+                Log.e("RepoActivity", "page: $page, List Repo : ${response.body().toString()}")
                 hasMore =  response.body()?.count() == 30
                 repoAdapter.submitList(repoAdapter.currentList + response.body().orEmpty())
             }

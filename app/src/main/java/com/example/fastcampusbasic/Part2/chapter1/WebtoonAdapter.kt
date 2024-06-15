@@ -9,7 +9,7 @@ class WebtoonAdapter(private val webtoonActivity: WebtoonActivity) : FragmentSta
     }
 
     override fun createFragment(position: Int): Fragment {
-        return when(position) {
+        return when(position) { //todo
             0 -> {
                 return WebViewFragment(position, "https://comic.네이버.com/webtoon?tab=mon").apply {
                     listener = webtoonActivity
