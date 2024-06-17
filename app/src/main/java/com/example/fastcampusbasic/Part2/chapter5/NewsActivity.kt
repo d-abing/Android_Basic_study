@@ -47,7 +47,7 @@ class NewsActivity : AppCompatActivity() {
             )
         }
 
-        binding.searchTextInputEt.setOnEditorActionListener { v, actionId, event ->
+        binding.searchTextInputEt.setOnEditorActionListener { v, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 binding.chipG.clearCheck()
                 newsService.search(binding.searchTextInputEt.text.toString()).submitList()

@@ -22,7 +22,7 @@ class MyPageFragment : Fragment(R.layout.fragment_my_page) {
 
         binding = FragmentMyPageBinding.bind(view)
 
-        val currentUserId = Firebase.auth.currentUser!!.uid ?: ""
+        val currentUserId = Firebase.auth.currentUser?.uid ?: ""
         val userDB = Firebase.database.reference.child(Key.DB_USERS).child(currentUserId)
 
         userDB.get().addOnSuccessListener {

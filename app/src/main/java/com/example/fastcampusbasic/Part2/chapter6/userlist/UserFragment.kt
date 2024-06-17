@@ -32,7 +32,7 @@ class UserFragment : Fragment(R.layout.fragment_user) {
             val chatDB = Firebase.database.reference.child(DB_CHATS).child(myUserId).child(otherUser.userId ?: "")
 
             chatDB.get().addOnSuccessListener {
-                var chatId = ""
+                val chatId: String
 
                 if (it.value != null) {
                     val chat = it.getValue(ChatItem::class.java)

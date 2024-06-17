@@ -39,7 +39,7 @@ class MedicalEditActivity : AppCompatActivity() {
             ).show()
         }
 
-        binding.warningCb.setOnCheckedChangeListener { buttonView, isChecked ->
+        binding.warningCb.setOnCheckedChangeListener { _, isChecked ->
             binding.warningEt.isVisible = isChecked
         }
 
