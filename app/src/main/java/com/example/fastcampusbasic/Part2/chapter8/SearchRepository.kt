@@ -1,7 +1,5 @@
 package com.example.fastcampusbasic.Part2.chapter8
 
-import android.content.res.Resources
-import com.example.fastcampusbasic.Part2.chapter4.GITHUB_TOKEN
 import com.example.fastcampusbasic.R
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

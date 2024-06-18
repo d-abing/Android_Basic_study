@@ -8,9 +8,7 @@ import androidx.appcompat.widget.SearchView.OnQueryTextListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fastcampusbasic.databinding.ActivityMapBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.google.android.play.integrity.internal.m
 import com.naver.maps.geometry.LatLng
-import com.naver.maps.geometry.Tm128
 import com.naver.maps.map.CameraAnimation
 import com.naver.maps.map.CameraUpdate
 import com.naver.maps.map.MapView

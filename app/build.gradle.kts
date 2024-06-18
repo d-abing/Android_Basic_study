@@ -4,6 +4,7 @@ plugins {
     id("kotlin-kapt")
     id("kotlin-parcelize")
     id("com.google.gms.google-services")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -78,11 +79,14 @@ dependencies {
     implementation("com.google.firebase:firebase-database-ktx")
     implementation("com.google.firebase:firebase-messaging-ktx")
 
-    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
 
     implementation("com.naver.maps:map-sdk:3.18.0")
 
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
 
     implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+
+    implementation("com.kakao.sdk:v2-user:2.12.1")
 }
