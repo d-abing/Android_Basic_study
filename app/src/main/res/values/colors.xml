@@ -15,4 +15,5 @@
     <color name="light_purple">#DEBDFB</color>
     <color name="music_back">#E5E0AA</color>
     <color name="light_light_purple">#F0D6FF</color>
+    <color name="light_gray">#CCCCCC</color>
 </resources>

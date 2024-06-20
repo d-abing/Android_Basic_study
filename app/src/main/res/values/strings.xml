@@ -3,4 +3,9 @@
     <string name="default_notification_channel_id">default_notification_channel_id</string>
     <string name="temperature_text">%.1f°</string>
     <string name="precipitation_text">강수확률 : %d %%</string>
+    <string name="signIn">로그인</string>
+    <string name="signUp">회원 가입</string>
+    <string name="signOut">로그아웃</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload">업로드</string>
 </resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Part2.chapter10.ui.article.WriteArticleFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_bar_l"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:text="@string/upload"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/toolbar_underline_v"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar_l"
+        android:background="@color/light_gray" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_underline_v">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/photo_iv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/light_gray"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/add_photo_Btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_add_24"
+                app:layout_constraintBottom_toBottomOf="@id/photo_iv"
+                app:layout_constraintEnd_toEndOf="@id/photo_iv"
+                app:layout_constraintStart_toStartOf="@id/photo_iv"
+                app:layout_constraintTop_toTopOf="@id/photo_iv" />
+
+
+            <ImageView
+                android:id="@+id/clear_photo_Btn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/baseline_clear_24"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/photo_iv"
+                app:layout_constraintTop_toTopOf="@id/photo_iv"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/description_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:hint="사진에 대해 설명해주세요"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photo_iv" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/progress_bar_l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

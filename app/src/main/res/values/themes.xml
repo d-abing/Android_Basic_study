@@ -3,6 +3,10 @@
     <style name="Base.Theme.FastCampusBasic" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+
     </style>
 
     <style name="Theme.FastCampusBasic" parent="Base.Theme.FastCampusBasic" />
