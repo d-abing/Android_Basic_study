@@ -1,0 +1,12 @@
+{
+  "user": {
+    "nickname": "커피시키신분",
+    "starCount": 10,
+    "totalCount": 12
+  },
+  "appbarImage": "https://picsum.photos/300/100",
+  "banner": {
+    "image": "https://picsum.photos/300/400",
+    "contentDescription": "현재 진행중인 이벤트"
+  }
+}
