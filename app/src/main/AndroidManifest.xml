@@ -27,8 +27,8 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Part2.chapter11.CafeActivity"
-            android:exported="true" >
+            android:name=".Part2.chapter12.YotubeActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,9 +36,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Part2.chapter11.CafeActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".Part2.chapter10.TomorrowHouseActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Part2.chapter9.EmailLoginActivity"
             android:exported="false" />
@@ -49,7 +51,7 @@
 
         <activity
             android:name=".Part2.chapter9.KakaoLoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true">

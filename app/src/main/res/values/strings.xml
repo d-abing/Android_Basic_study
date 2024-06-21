@@ -14,4 +14,9 @@
     <string name="food_menu_title">함께하면 좋은 푸드</string>
     <string name="delivery">DELIVERY</string>
     <string name="order">Order</string>
+    <string name="yotube">요튜브</string>
+    <string name="sub_title_video_info">%1$s · 조회수 %2$s · %3$s</string>
+    <string name="header_sub_title_video_info">조회수 %1$s · %2$s</string>
+    <string name="home">home</string>
+    <string name="storage">storage</string>
 </resources>

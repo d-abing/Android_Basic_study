@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.fastcampusbasic.Part2.chapter12.ExoPlayerMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/player_scene">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/appbar_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <TextView
+                    android:id="@+id/appbar_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_smart_display_24"
+                    android:drawablePadding="3dp"
+                    android:drawableTint="?attr/colorPrimary"
+                    android:text="@string/yotube"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/video_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/video_player_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:controller_layout_id="@layout/layout_yotube_player_control"
+        app:layout_constraintBottom_toBottomOf="@id/video_player_container"
+        app:layout_constraintEnd_toEndOf="@id/video_player_container"
+        app:layout_constraintStart_toStartOf="@id/video_player_container"
+        app:layout_constraintTop_toTopOf="@id/video_player_container"
+        app:resize_mode="fixed_width" />
+
+    <TextView
+        android:id="@+id/video_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/video_player_container"
+        app:layout_constraintEnd_toStartOf="@id/control_btn"
+        app:layout_constraintStart_toEndOf="@id/player_view"
+        app:layout_constraintTop_toTopOf="@id/video_player_container"
+        tools:text="Video Title" />
+
+    <ImageView
+        android:id="@+id/control_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:padding="10dp"
+        android:src="@drawable/baseline_play_arrow_24_black"
+        app:layout_constraintBottom_toBottomOf="@+id/video_player_container"
+        app:layout_constraintEnd_toStartOf="@id/hide_btn"
+        app:layout_constraintTop_toTopOf="@+id/coordinatorLayout"
+        tools:alpha="1" />
+
+    <ImageView
+        android:id="@+id/hide_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:padding="10dp"
+        android:src="@drawable/baseline_clear_24"
+        app:layout_constraintBottom_toBottomOf="@+id/video_player_container"
+        app:layout_constraintEnd_toEndOf="@id/video_player_container"
+        app:layout_constraintTop_toTopOf="@+id/coordinatorLayout"
+        tools:alpha="1" />
+
+    <FrameLayout
+        android:id="@+id/recyclerview_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/video_player_container" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/player_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerview_container"
+        app:layout_constraintEnd_toEndOf="@id/recyclerview_container"
+        app:layout_constraintStart_toStartOf="@id/recyclerview_container"
+        app:layout_constraintTop_toTopOf="@id/recyclerview_container" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_yotube" />
+
+</com.example.fastcampusbasic.Part2.chapter12.ExoPlayerMotionLayout>

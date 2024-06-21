@@ -95,4 +95,6 @@ dependencies {
 
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.2")
+
+    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
 }
